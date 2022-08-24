@@ -7,6 +7,8 @@ Detect if code is running inside a docker container.
 Check the filesystem type of `/`, if it is [OverlayFS](https://en.wikipedia.org/wiki/OverlayFS) assume the code
 is running inside a Docker container.
 
+:warning: It does not work if Docker is configured to use a storage driver that is not `OverlayFS` cf: [https://docs.docker.com/storage/storagedriver/select-storage-driver/](https://docs.docker.com/storage/storagedriver/select-storage-driver/).
+
 ## Quick Start
 
 ```
